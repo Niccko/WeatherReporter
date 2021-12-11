@@ -8,6 +8,7 @@ import requests
 from pprint import pprint
 import sandbox.model as model
 import pandas as pd
+import schedule
 
 
 import database as db
@@ -111,6 +112,8 @@ def t_get_presentation_data():
     presentation_data["forecast_temp_C"] = model.predict(history)[0]
     presentation_data["updated"] = call_time.strftime("%Y-%m-%d %I:%M%p")
 
+schedule.every(15).minutes.do(t_get_presentation_data)
 
-t_get_presentation_data()
-print(presentation_data)
+while True:
+    schedule.run_pending()
+    time.sleep(1)

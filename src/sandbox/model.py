@@ -39,7 +39,7 @@ x_test, x_valid, y_test, y_valid = train_test_split(x_temp,y_temp,test_size=0.5,
 # print("Testing instances    {}, Testing features    {}".format(x_test.shape[0], x_test.shape[1]))
 
 
-def wx_input_fn(X, y=None, num_epochs=None, shuffle=True, batch_size=400):
+def input_fn(X, y=None, num_epochs=None, shuffle=True, batch_size=400):
     return tf.compat.v1.estimator.inputs.pandas_input_fn(x=X,
                                                          y=y,
                                                          num_epochs=num_epochs,
@@ -51,7 +51,7 @@ feature_cols = [tf.feature_column.numeric_column(col) for col in x.columns]
 
 regressor = tf.estimator.DNNRegressor(feature_columns=feature_cols,
                                       hidden_units=[50, 50],
-                                      model_dir='tf_wx_model')
+                                      model_dir='weather_model')
 
 # evaluations = []
 # STEPS = 400
