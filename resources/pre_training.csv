@@ -1,4 +1,4 @@
-,date,maxtempC,mintempC,avgtempC,pressure,DewPointC,humidity,maxtempC_lg1,mintempC_lg1,avgtempC_lg1,pressure_lg1,DewPointC_lg1,humidity_lg1,maxtempC_lg2,mintempC_lg2,avgtempC_lg2,pressure_lg2,DewPointC_lg2,humidity_lg2,maxtempC_lg3,mintempC_lg3,avgtempC_lg3,pressure_lg3,DewPointC_lg3,humidity_lg3
+,date,maxtempc,mintempc,avgtempc,pressure,dewpointc,humidity,maxtempc_lg1,mintempc_lg1,avgtempc_lg1,pressure_lg1,dewpointc_lg1,humidity_lg1,maxtempc_lg2,mintempc_lg2,avgtempc_lg2,pressure_lg2,dewpointc_lg2,humidity_lg2,maxtempc_lg3,mintempc_lg3,avgtempc_lg3,pressure_lg3,dewpointc_lg3,humidity_lg3
 3,2010-01-04,-14,-21,-17,1015,-17,99,-18.0,-20.0,-19.0,1009.0,-18.0,99.0,-9.0,-13.0,-10.0,1007.0,-10.0,98.0,-7.0,-13.0,-9.0,1007.0,-7.0,98.0
 4,2010-01-05,-13,-16,-14,1023,-14,98,-14.0,-21.0,-17.0,1015.0,-17.0,99.0,-18.0,-20.0,-19.0,1009.0,-18.0,99.0,-9.0,-13.0,-10.0,1007.0,-10.0,98.0
 5,2010-01-06,-13,-16,-14,1029,-14,98,-13.0,-16.0,-14.0,1023.0,-14.0,98.0,-14.0,-21.0,-17.0,1015.0,-17.0,99.0,-18.0,-20.0,-19.0,1009.0,-18.0,99.0
