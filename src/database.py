@@ -22,11 +22,10 @@ def get_last_data(date):
 
 
 def insert_current(data):
-    sql = "UPDATE \"DAILY_METRICS\" SET (date, mintempc, maxtempc, avgtempc, humidity, pressure, dewpointc) = \
-            ('{date}', {mintempc}, {maxtempc}, {avgtempc}, {humidity}, {pressure}, {dewpointc}) WHERE date='{date}'; \
+    sql = "UPDATE \"DAILY_METRICS\" SET (\"date\", \"mintempC\", \"maxtempC\", \"avgtempC\", \"humidity\", \"sunHour\", \"DewPointC\") = \
+            ('{date}', {mintempC}, {maxtempC}, {avgtempC}, {humidity}, {sunHour}, {DewPointC}) WHERE date='{date}'; \
             INSERT INTO \"DAILY_METRICS\" \
-            SELECT '{date}', {mintempc}, {maxtempc}, {avgtempc}, {humidity}, {pressure}, {dewpointc} \
+            SELECT '{date}', {mintempC}, {maxtempC}, {avgtempC}, {humidity}, {sunHour}, {DewPointC} \
             WHERE NOT EXISTS (SELECT 1 FROM \"DAILY_METRICS\" WHERE date='{date}');".format(**data)
-    print(sql)
     cur.execute(sql)
     conn.commit()

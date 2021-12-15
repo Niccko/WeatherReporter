@@ -1,2 +1,4 @@
 .env
 venv
+weather_model_old
+resources/pre_training_old.csv
